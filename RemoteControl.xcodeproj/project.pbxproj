@@ -7,12 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD69B6491B203D0E00AB9ED3 /* AddAnApplianceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD69B6481B203D0E00AB9ED3 /* AddAnApplianceViewController.swift */; };
 		AD922CD11B122AA4000887D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD922CD01B122AA4000887D8 /* AppDelegate.swift */; };
 		AD922CD31B122AA4000887D8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD922CD21B122AA4000887D8 /* ViewController.swift */; };
 		AD922CD61B122AA4000887D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD922CD41B122AA4000887D8 /* Main.storyboard */; };
 		AD922CD81B122AA4000887D8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD922CD71B122AA4000887D8 /* Images.xcassets */; };
 		AD922CDB1B122AA4000887D8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD922CD91B122AA4000887D8 /* LaunchScreen.xib */; };
 		AD922CE71B122AA4000887D8 /* RemoteControlTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD922CE61B122AA4000887D8 /* RemoteControlTests.swift */; };
+		AD922CF11B122E3E000887D8 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD922CF01B122E3E000887D8 /* CustomTableViewCell.swift */; };
+		AD922CF31B1230B1000887D8 /* Appliance.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD922CF21B1230B1000887D8 /* Appliance.swift */; };
+		ADCB91CE1B137E6A0099FFD9 /* TelevisionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCB91CD1B137E6A0099FFD9 /* TelevisionViewController.swift */; };
+		ADCB91D01B137E7D0099FFD9 /* FanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADCB91CF1B137E7D0099FFD9 /* FanViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AD69B6481B203D0E00AB9ED3 /* AddAnApplianceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddAnApplianceViewController.swift; sourceTree = "<group>"; };
 		AD922CCB1B122AA4000887D8 /* RemoteControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RemoteControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD922CCF1B122AA4000887D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD922CD01B122AA4000887D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +42,10 @@
 		AD922CE01B122AA4000887D8 /* RemoteControlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RemoteControlTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD922CE51B122AA4000887D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD922CE61B122AA4000887D8 /* RemoteControlTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteControlTests.swift; sourceTree = "<group>"; };
+		AD922CF01B122E3E000887D8 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		AD922CF21B1230B1000887D8 /* Appliance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Appliance.swift; sourceTree = "<group>"; };
+		ADCB91CD1B137E6A0099FFD9 /* TelevisionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TelevisionViewController.swift; path = ../TelevisionViewController.swift; sourceTree = "<group>"; };
+		ADCB91CF1B137E7D0099FFD9 /* FanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FanViewController.swift; path = ../FanViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,9 +87,14 @@
 		AD922CCD1B122AA4000887D8 /* RemoteControl */ = {
 			isa = PBXGroup;
 			children = (
+				ADCB91CF1B137E7D0099FFD9 /* FanViewController.swift */,
+				ADCB91CD1B137E6A0099FFD9 /* TelevisionViewController.swift */,
 				AD922CD01B122AA4000887D8 /* AppDelegate.swift */,
 				AD922CD21B122AA4000887D8 /* ViewController.swift */,
 				AD922CD41B122AA4000887D8 /* Main.storyboard */,
+				AD69B6481B203D0E00AB9ED3 /* AddAnApplianceViewController.swift */,
+				AD922CF21B1230B1000887D8 /* Appliance.swift */,
+				AD922CF01B122E3E000887D8 /* CustomTableViewCell.swift */,
 				AD922CD71B122AA4000887D8 /* Images.xcassets */,
 				AD922CD91B122AA4000887D8 /* LaunchScreen.xib */,
 				AD922CCE1B122AA4000887D8 /* Supporting Files */,
@@ -212,8 +227,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADCB91D01B137E7D0099FFD9 /* FanViewController.swift in Sources */,
+				AD69B6491B203D0E00AB9ED3 /* AddAnApplianceViewController.swift in Sources */,
+				ADCB91CE1B137E6A0099FFD9 /* TelevisionViewController.swift in Sources */,
+				AD922CF11B122E3E000887D8 /* CustomTableViewCell.swift in Sources */,
 				AD922CD31B122AA4000887D8 /* ViewController.swift in Sources */,
 				AD922CD11B122AA4000887D8 /* AppDelegate.swift in Sources */,
+				AD922CF31B1230B1000887D8 /* Appliance.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +431,7 @@
 				AD922CEC1B122AA4000887D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AD922CED1B122AA4000887D8 /* Build configuration list for PBXNativeTarget "RemoteControlTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +440,7 @@
 				AD922CEF1B122AA4000887D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

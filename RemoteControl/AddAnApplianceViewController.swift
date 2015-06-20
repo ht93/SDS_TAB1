@@ -10,6 +10,14 @@ import UIKit
 
 class AddAnApplianceViewController: UIViewController {
 
+    @IBOutlet weak var applianceType: UITextField!
+    
+    
+    @IBOutlet weak var brandName: UITextField!
+    
+    
+    @IBOutlet weak var serialNumber: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -20,6 +28,20 @@ class AddAnApplianceViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    var addType: String = ""
+    var addBrand: String = ""
+    var addSerialNumber: String = ""
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+        if segue.identifier == "doneSegue" {
+            addType = applianceType.text
+            addBrand = brandName.text
+            addSerialNumber = serialNumber.text
+        }
+       
+    }
+    
     
 
     /*

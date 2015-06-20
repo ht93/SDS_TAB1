@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 Zhang Lian. All rights reserved.
 //
 
-import Cocoa
+import UIKit
 
 class TelevisionViewController: UIViewController {
 
